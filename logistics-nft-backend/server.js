@@ -74,9 +74,9 @@ app.post('/transfer', async (req, res) => {
 
 
 // Route to check the balance of ERC20 tokens for a user (POST request)
-app.post('/balance', async (req, res) => {
-  const { address } = req.body; // Extracting address from the request body
-  const { tokenId } = req.body; // Extracting address from the request body
+app.get('/balance', async (req, res) => {
+  const { address } = req.query; // Extracting address from the request params
+  const { tokenId } = req.query; // Extracting address from the request params
   console.log(address);
   try {
     const balance =  await logisticsNFT.balanceOf(address, tokenId)
@@ -89,8 +89,8 @@ app.post('/balance', async (req, res) => {
 });
 
 // Route to check the balance of ERC20 tokens for a user
-app.post('/balanceERC20', async (req, res) => {
-  const { address } = req.body;
+app.get('/balanceERC20', async (req, res) => {
+  const { address } = req.query;
   //console.log(address)
   //const address2 = "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"
 
