@@ -1,0 +1,16 @@
+{
+    "name": "Logistics Item #1",
+    "description": "Sasuke1 Photo.",
+    "image": "https://olive-odd-dingo-816.mypinata.cloud/ipfs/bafkreibfv6ibvjprdyyl34vw7ptyyqxjdazlwq3o3bp7refwgacnbana4u",
+    "attributes": [
+      {
+        "trait_type": "Category",
+        "value": "Electronics"
+      },
+      {
+        "trait_type": "Weight",
+        "value": "5kg"
+      }
+    ]
+  }
+  
